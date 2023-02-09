@@ -1,85 +1,155 @@
-body{
-   /* Set line spacing */
+body {
+    /* Set line spacing */
+    inline-size: 2;
 }
 
 
-header, nav{
+header,
+nav {
     /* Set padding and margin */
+    margin: 10px;
+    padding: 10px, 5px, 10px 5px;
+    justify-content: space-between;
+    text-align: center;
 
 }
-nav ul li{
-    /* Set display, margin, padding, font-size, background-color */
+
+nav ul li {
+    /* Style the list items within the nav, Set display horizontally , margin, padding, font-size, background-color */
+    width: fit-content;
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    background-color: #93BFCF;
+    font-size: large;
+    margin: 20px;
 
 }
 
-nav a{
+nav a {
     /* Set text decoration*/
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-style: bold;
+    text-align: center;
 }
 
-a:visited{
+a:visited {
     /* Set color */
+    color: black;
 
 }
 
-nav a.current{
+nav a.current {
     /* Set text decoration, transformation, and underline properties */
+
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    position: relative;
+    bottom: 2px;
+    text-transform: uppercase;
 }
 
 
-h1{
-   /*Set font and font size*/
+h1 {
+    /*Set font and font size*/
+    font-size: xx-large;
+    font-style: bold;
+    font-family: 'Merriweather', Arial, 'Times New Roman', sans-serif;
+    text-align: left;
 
 }
 
-h2{
+h2 {
     /*Set font, font size, and alignment*/
+    font-size: xx-large;
+    font-family: 'Anton', 'Times New Roman', Arial, sans-serif;
+    text-align: center;
 }
 
-h3{
+h3 {
     /*Set font size*/
+    font-size: large;
 
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     /*Set margin */
+    margin-top: 5px;
+    padding: 5px;
 
 }
-.grid{
+
+.grid {
     /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #6097b46f;
+    justify-content: space-between;
+
 }
 
-.grid div{
+.grid div {
     /* Set border properties, padding, and background color */
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 2px solid black;
+
 
 }
 
-.grid img{
+.grid img {
     /* Set width, margin, and display */
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
 }
 
 
-.grid div:nth-child(3n+1)  {
+.grid div:nth-child(3n+1) {
     /* Set box shadow */
-    }
-
-.grid div:nth-child(3n)  {
-    /* Set box shadow */ 
+    box-shadow: 5px 0px 5px 2px #e8e2e2dc;
 }
 
-.grid div:nth-child(3n+2)  {
-     /* Set box shadow */
+.grid div:nth-child(3n) {
+    /* Set box shadow */
+    box-shadow: -5px 0px 5px 2px #e8e2e2dc;
 }
-    
 
-p + p {
-     /* Set indentation */
-  }
-  
-p{
-     /* Set margin */
+.grid div:nth-child(3n+2) {
+    /* Set box shadow */
+    box-shadow: 5px 0px 5px 2px #e8e2e2dc, -5px 0px 5px 2px #e8e2e2dc;
 }
 
 
-.grid ul li{
+p+p {
+    /* Set indentation */
+    text-indent: 20px;
+    padding: 5px;
+}
+
+p {
+    /* Set margin */
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+
+.grid ul li {
     /* Set margin, line-spacing, list styling  */
+    inline-size: 1;
+    list-style-image: 'images/sketchbook.png';
+    margin-left: 10px;
+    margin-bottom: 10px;
+
 }
